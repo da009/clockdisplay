@@ -17,16 +17,28 @@
  *
  *Es muy posible que no seas capaz de completar la actividad. No te preocupes,
  *el objetivo es intentarlo.
- */
+*/
 public class ClockDisplay
 {
     // instance variables - replace the example below with your own
     private int horas;
     private int minutos;
     
-    public ClockDisplay (int horaac, int minutoac)
+    /**
+     * Constructor de la clase ClockDisplay
+     */
+    public ClockDisplay ()
     {
         horas = 0;
         minutos = 0;
+    }
+     
+    /**
+     * Permite fijar la hora
+     */
+    public void setTime(int horaac, int minutoac)
+    {
+        horas = horaac;
+        minutos = minutoac;
     }
 }

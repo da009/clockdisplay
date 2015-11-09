@@ -1,4 +1,8 @@
 #BlueJ class context
-comment0.params=horaac\ minutoac
-comment0.target=ClockDisplay(int,\ int)
-numComments=1
+comment0.params=
+comment0.target=ClockDisplay()
+comment0.text=\r\n\ Constructor\ de\ la\ clase\ ClockDisplay\r\n
+comment1.params=horaac\ minutoac
+comment1.target=void\ setTime(int,\ int)
+comment1.text=\r\n\ Permite\ fijar\ la\ hora\r\n
+numComments=2
