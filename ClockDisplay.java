@@ -68,7 +68,7 @@ public class ClockDisplay
             minutos = 00;
             horas = horas + 1;
         }
-        else if (minutos < 59 && horas >= 23)
+        else if (minutos <= 59 && horas >= 23)
         {
             minutos = minutos + 1;
             horas = 00;
