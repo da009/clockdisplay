@@ -5,4 +5,6 @@ comment0.text=\r\n\ Constructor\ de\ la\ clase\ ClockDisplay\r\n
 comment1.params=horaac\ minutoac
 comment1.target=void\ setTime(int,\ int)
 comment1.text=\r\n\ Permite\ fijar\ la\ hora\r\n
-numComments=2
+comment2.params=
+comment2.target=java.lang.String\ getTime()
+numComments=3
