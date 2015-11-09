@@ -39,8 +39,14 @@ public class ClockDisplay
      */
     public void setTime(int horaac, int minutoac)
     {   
+        if (horaac >= 0 && horaac <= 23)
+        {
             horas = horaac;
+        }
+        if (minutoac >= 0 && minutoac <= 59)
+        {
             minutos = minutoac;
+        }
     }
     
     public String getTime()
@@ -48,5 +54,28 @@ public class ClockDisplay
         String horaac = "%02d:%02d";
         String horaresul = String.format (horaac,horas,minutos);
         return horaresul;
+    }
+    
+    public void timeTick()
+    {
+        if (minutos >= 59 && horas >= 23)
+        {
+            minutos = 00;
+            horas = 00;
+        }
+        else if (minutos >=59 && horas <= 23)
+        {
+            minutos = 00;
+            horas = horas + 1;
+        }
+        else if (minutos < 59 && horas >= 23)
+        {
+            minutos = minutos + 1;
+            horas = 00;
+        }
+        else
+        {
+            minutos = minutos +1;
+        }
     }
 }
